@@ -1,0 +1,17 @@
+﻿<Window x:Class="WpfEntityFramework.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfEntityFramework"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="dataGrid" ItemsSource="{Binding}"
+            HorizontalAlignment="Left" Height="386" Margin="27,10,0,0" VerticalAlignment="Top" Width="460"/>
+        <Button x:Name="btnEkle" Click="btnEkle_Click" Content="Ekle" HorizontalAlignment="Left" Margin="582,32,0,0" VerticalAlignment="Top" Width="80" Height="37"/>
+        <Button x:Name="btnGuncelle"  Content="Güncelle" HorizontalAlignment="Left" Margin="582,123,0,0" VerticalAlignment="Top" Width="80" Height="37" Click="btnGuncelle_Click"/>
+        <Button x:Name="btnSil" Click="btnSil_Click" Content="Sil" HorizontalAlignment="Left" Margin="582,231,0,0" VerticalAlignment="Top" Width="80" Height="37" />
+        <!--VERİ BAĞLAMA İŞLEVİ-->
+    </Grid>
+</Window>
